@@ -1,15 +1,12 @@
 # Informes GIP
 
-Portada de los informes ejecutivos mensuales de inspección técnica de obra de GIP, publicada en https://informes.gip.cl
+Página de entrada de los informes ejecutivos mensuales de inspección técnica de obra de GIP, publicada en https://informes.gip.cl
 
-| Obra | Dirección | Repositorio |
-|------|-----------|-------------|
-| Edificio Carrera (GIP_228) | https://informes.gip.cl/carrera/ | `contactogip/carrera` |
-| Edificio Torre 1, Lote 18 (GIP_308) | https://informes.gip.cl/torre-1/ | `contactogip/torre-1` |
-| Edificio HC2, Ampliación Clínica U Andes (GIP_267) | https://informes.gip.cl/Clinica-UAndes/ | `contactogip/Clinica-UAndes` |
+La página es neutra: no lista las obras. Cada mandante entra con el enlace directo de su obra (`informes.gip.cl/<repositorio>/`), que GIP le entrega por separado.
 
-- `index.html`: portada con una tarjeta por obra (foto, último informe y avance). Al emitir un informe nuevo se actualizan su número, período y avance.
+- `index.html`: página de entrada, sin enlaces a las obras.
 - `CNAME`: dominio personalizado `informes.gip.cl` (registro CNAME `informes` → `contactogip.github.io` en el DNS de gip.cl, administrado en Wix).
-- `media/`: logos de GIP y foto de cada obra.
+- `media/marca/`: logos de GIP.
+- `Edificio-Carrera---Negrete/` y `Lote-18---Torre-1/`: redirigen las direcciones antiguas a las nuevas.
 
-Cada obra vive en su propio repositorio con GitHub Pages activo; al tener esta portada un dominio personalizado, cada obra queda disponible en `informes.gip.cl/<repositorio>/`.
+Cada obra vive en su propio repositorio con GitHub Pages activo; al tener este repositorio un dominio personalizado, cada obra queda disponible en `informes.gip.cl/<repositorio>/`.
